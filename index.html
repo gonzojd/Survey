@@ -1,0 +1,91 @@
+<html lang="en"
+
+
+    <head>
+
+        <style>
+            body{
+                font-family:sans-serif;
+                padding-left:20%;
+                padding-right: 20%;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            label{
+                font-size: 16px;
+                display: block;
+            }
+            input, textarea, select{
+                display: block;
+                width: 100%;
+                padding-bottom: 20px;
+            } 
+            form{
+                background-color: deepskyblue;
+                opacity: 50%;
+            }
+
+            .radio-inline{
+                font-size: inline-block;
+
+            }
+
+
+            </style>
+
+
+
+
+    </head>
+
+    <body>
+
+    <h1 id="title">Which anime character are you?</h1>
+    <p id="description">
+        This is a survey where you can tell us about the anime character that best describes you
+    </p>
+    <form id="survey-form">
+       <label id="name-label">Name:</label>
+
+       <input type="text" name="name" id="name" required placeholder="First Name" ><br>
+
+       <label id="email-label">Email:</label>
+
+       <input type="email" name="email" id="email" required placeholder="Best Email"><br>
+
+       <label id="number-label">Number:</label>
+
+       <input type="number" name="number" id="number" min="0" max="10"required placeholder="Level of excitement"><br>
+
+
+    <select id="dropdown" name="anime characters">
+         <option value="katara">Katara</option>
+         <option value="Gon">Gon</option>
+         <option value="Yasuke">Yasuke</option>
+         <option value="naruto">Naruto</option>
+     </select>
+
+    
+     <br>
+     <input type="radio" class="radio-inline" name="gender" value="male">Male<br>
+     <input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+    <input type="radio" class="radio-inline" name="gender"  value="other">Other<br>
+    <br>
+
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a bike<br>
+
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> i have a car<br>
+
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> i have a boat<br>
+
+
+    <textarea placeholder="Additional Comments"></textarea>
+
+       <input type="submit" id="submit">
+     </form>
+    <script type="text/javascript" src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js>
+    </script>
+
+    </body>
+</html>
